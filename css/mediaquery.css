@@ -1,27 +1,3 @@
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-     scroll-behavior: auto;
-    }
-    
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  
   .container {
     width: 95%;
     margin-inline: auto;
@@ -53,162 +29,58 @@
     }
   }
   
-  .flex {
-    display: flex;
-  }
-  
-  .flex-row {
-    flex-direction: row;
-  }
-  
-  .flex-column {
-    flex-direction: column-reverse;
-  }
-  
-  .navbar {
-    padding-block: 1em;
-    justify-content: space-between;
-  }
-  
-  .navbar__items {
-    position: fixed;
-    inset: 0 0 0 30%;;
-    gap: 1em;
-    background: hsl( 0 0% 0% / 0.1);
-    padding: 2em;
-    height: 100vh;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: right;
-    display: none;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .navbar__items {
-      display: flex;
-      background: transparent;
-      flex-direction: row;
-      position: static;
-      height: auto;
-      padding: 0;
-      justify-content: space-between;
-      inset: 0;
+  @media screen and (max-width: 500px){
+    .header-main{
       width: 100%;
+      height: 200px;   
+      background-image: url(../img/fondo-1.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; 
     }
-  }
-  
-  .navbar__logo {
-    font-size: 1.5rem;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .navbar__links {
-    align-items: center;
-    justify-content: space-between;
-    gap: 2em;
-    flex-direction: column;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .navbar__links {
-      flex-direction: row;
+    main{
+      align-content: center;
+      background-color: rgb(248, 248, 248);
     }
-  
-    .close-nav {
-      display: none;
-    }
-  
-    .navbar__menu-icon {
-      display: none;
-    }
+  main p{
+    font-size: 30px;
+    text-align: center;
+    border-bottom:  2px solid rgb(128, 123, 123);
+    margin: 10px 40px 0;
+    padding-bottom: 5px;
   }
+  .seccion{
+    padding: 1em 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    place-items: center;
+    gap: 1em;
+    
+    
+}
+
+.seccion-productos{
+  width: 90%;
+  margin: 0;
+  padding: 15px 15px ;
+  justify-items: center;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+}
+
+.seccion-productos p{
+  padding-top: 5px;
+  font-size: 25px;
+  border-bottom: 0px;
+  text-align: left;
   
-  .navbar__icons {
-    gap: 2em;
-    outline: none;
-    align-items: center;
-    justify-content: space-between;
+  margin: 0;
+  padding-bottom: 0;
+}
+.seccion-productos h3{
+  padding-top: 7px;
+  font-size: 23px;
+  text-align: center;
+}
   }
-  
-  .navbar__icons div {
-    display: flex;
-    gap: 2em; 
-  }
-  
-  .navbar__profile-pic {
-    height: 34px;
-    border-radius: 50%;
-  }
-  
-  .navbar__search {
-    margin-inline-start: 1em;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .navbar__search input {
-    border: none;
-    border-radius: 10px;
-    background: transparent;
-    padding: 0.2em 2em;
-  }
-  
-  .navbar__search input:focus {
-    outline: none;
-    border-bottom: 1px solid #333;
-  }
-  
-  
-  .navbar__search input::placeholder {
-    overflow: visible;
-  }
-  
-  .navbar__search-icon {
-    display: none;
-  }
-  
-  @media only screen and (min-width: 640px) {
-  
-    .navbar__search-icon {
-      display: block;
-      position: absolute;
-      top: 20%;
-      left: 22%;;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .navbar__search-icon {
-      top: 35%;
-      left: 1%;
-    }
-  }
-  
-  .navbar__controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .navbar__controls i {
-    margin-inline: 1em;
-    font-size: 1.2rem;
-    border: 2px solid #333;
-    padding: 0.2em;
-    border-radius: 0.2em;
-  }
-  
-  .navbar_left {
-    flex-direction: column;
-    display: flex;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .flex-column {
-      flex-direction: row;
-    }
-  }
+ 
