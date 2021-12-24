@@ -16,7 +16,6 @@
     display: flex;
     justify-content: space-between;
     padding: 15px 15px;
-    
 }
 .nav-buscar{
     display: flex;
@@ -54,7 +53,7 @@ main p{
 .seccion{
     padding: 0 80px 80px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .seccion-productos{
     width: 80%;
