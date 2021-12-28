@@ -20,8 +20,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -61,9 +61,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -135,9 +135,9 @@ a {
 
 .navbar__items {
   position: fixed;
-  inset: 0 0 0 30%;;
+  inset: 0 0 0 30%;
   gap: 1em;
-  background: hsl( 0 0% 0% / 0.1);
+  background: hsl(0 0% 0% / 0.1);
   padding: 2em;
   height: 100vh;
   display: flex;
@@ -196,7 +196,7 @@ a {
 
 .navbar__icons div {
   display: flex;
-  gap: 2em; 
+  gap: 2em;
 }
 
 .navbar__profile-pic {
@@ -224,7 +224,6 @@ a {
   border-bottom: 1px solid #333;
 }
 
-
 .navbar__search input::placeholder {
   overflow: visible;
 }
@@ -234,12 +233,11 @@ a {
 }
 
 @media only screen and (min-width: 640px) {
-
   .navbar__search-icon {
     display: block;
     position: absolute;
     top: 20%;
-    left: 22%;;
+    left: 22%;
   }
 }
 
@@ -277,32 +275,32 @@ a {
 }
 
 /*==== body ====*/
-main p{
+main p {
   font-size: 40px;
   text-align: center;
-  border-bottom:  2px solid rgb(128, 123, 123);
+  border-bottom: 2px solid rgb(128, 123, 123);
   margin: 20px 80px 0;
   padding-bottom: 15px;
 }
-.container__products{
+.container__products {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-.products{
+.products {
   grid-column: span 12;
   width: 80%;
   padding-top: 30px;
   justify-items: center;
   justify-self: center;
 }
-.products img{
+.products img {
   width: 100%;
 }
-.products h4{
+.products h4 {
   text-align: center;
   font-size: 25px;
 }
-.products p{
+.products p {
   padding-top: 10px;
   font-size: 25px;
   border-bottom: 0px;
@@ -310,8 +308,32 @@ main p{
   margin: 0;
   padding-bottom: 0;
 }
-.products h3{
+.products h3 {
   padding-top: 10px;
   font-size: 23px;
   text-align: center;
+}
+
+/*==== NAVBAR ====*/
+
+.controls > ul {
+  display: flex;
+  justify-content: center;
+}
+
+.controls > ul > li {
+  display: flex;
+  padding: 6px 6px;
+  margin: 0px 6px;
+  cursor: pointer;
+  color: #d8d8d8;
+  border-radius: 50%;
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls > ul > .active {
+  border: 1px solid #e89f71;
+  color: #e89f71;
 }
