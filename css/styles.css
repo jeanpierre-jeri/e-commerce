@@ -337,3 +337,9 @@ main p {
   border: 1px solid #e89f71;
   color: #e89f71;
 }
+
+.wrapper {
+  width: 1280px;
+  max-width: 50%;
+  margin-inline: auto;
+}
